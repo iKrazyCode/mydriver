@@ -1,5 +1,3 @@
-#pip install selenium
-#pip install webdriver_manager
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.firefox.service import Service as FirefoxService
