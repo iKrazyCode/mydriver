@@ -10,7 +10,7 @@ from selenium.webdriver.firefox.options import Options
 import platform
 
 
-class Driver:
+class MyDriver:
     driver = None
 
     def __init__(self, not_window=False):
@@ -30,12 +30,3 @@ class Driver:
             driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=op)
             self.driver = driver
 
-
-driver = Driver(not_window=True).driver
-
-driver.get("http://google.com")
-
-print(driver.current_url)
-print(driver.title)
-
-driver.close()
